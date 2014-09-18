@@ -66,7 +66,7 @@
 
             var getVideo = function (id) {
                 return $.ajax(videoApiUrl + "/" + id);
-            }
+            };
 
             var updateVideo = function (video) {
                 return $.ajax(videoApiUrl + "/" + video.Id, {
@@ -75,14 +75,21 @@
                 });
             };
 
+            var deleteVideo = function (id) {
+                return $.ajax(videoApiUrl + "/" + id, {
+                    type: "DELETE"
+                });
+            };
+
             var addVideo = function (video) {
                 return $.ajax(videoApiUrl, {
                     type: "POST",
                     data: video
                 });
-            }
+            };
 
             return {
+                deleteVideo: deleteVideo,
                 addVideo: addVideo,
                 updateVideo: updateVideo,
                 getVideos: getVideos,
@@ -123,6 +130,11 @@
                 showVideoForEdit(video);
             }
 
+            var deleteVideo = function myfunction() {
+                var id = getId(this);
+                videoServer.deleteVideo(id).done(refreshVideos);
+            }
+
             var clearEdit = function () {
                 $("#videoEditOutput").empty();
             };
@@ -148,6 +160,7 @@
                 $(document).on('click', ".editVideo", editVideo);
                 $(document).on('click', "#saveVideo", saveVideo);
                 $(document).on('click', "#createVideo", createVideo);
+                $(document).on('click', ".deleteVideo", deleteVideo);
             };
 
             var getId = function (element) {
