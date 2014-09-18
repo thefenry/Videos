@@ -1,0 +1,10 @@
+C:\Users\isued.MTXEPS\Documents\GitHub\Videos\ConsoleClient\bin\Debug\ConsoleClient.exe.config
+C:\Users\isued.MTXEPS\Documents\GitHub\Videos\ConsoleClient\bin\Debug\ConsoleClient.exe
+C:\Users\isued.MTXEPS\Documents\GitHub\Videos\ConsoleClient\bin\Debug\ConsoleClient.pdb
+C:\Users\isued.MTXEPS\Documents\GitHub\Videos\ConsoleClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\isued.MTXEPS\Documents\GitHub\Videos\ConsoleClient\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\isued.MTXEPS\Documents\GitHub\Videos\ConsoleClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\isued.MTXEPS\Documents\GitHub\Videos\ConsoleClient\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\isued.MTXEPS\Documents\GitHub\Videos\ConsoleClient\obj\Debug\ConsoleClient.csprojResolveAssemblyReference.cache
+C:\Users\isued.MTXEPS\Documents\GitHub\Videos\ConsoleClient\obj\Debug\ConsoleClient.exe
+C:\Users\isued.MTXEPS\Documents\GitHub\Videos\ConsoleClient\obj\Debug\ConsoleClient.pdb
