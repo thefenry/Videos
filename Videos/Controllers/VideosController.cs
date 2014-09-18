@@ -40,9 +40,22 @@ namespace Videos.Controllers
         }
 
         // POST: api/Video
-        public string Post(string value)
+        public HttpResponseMessage PostVideo(Video video)
         {
-            return value;
+            if (ModelState.IsValid)
+            {
+                db.Videos.Add(video);
+                db.SaveChanges();
+
+                //We always want to return a 201 code when a post is created instead of a generic 200. We also want to return a url/location
+                HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created, video);
+                response.Headers.Location = new Uri(Url.Link("DefaultApi", new { id = video.Id }));
+                return response;
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest);
+            }
         }
 
         // PUT: api/Video/5
